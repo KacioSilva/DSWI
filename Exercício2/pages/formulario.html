@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <main>
+        <h1>Crie uma Nova Conta</h1>
+        <form method="post">
+            <fieldset>
+                <h2>Conta</h3>
+                    <ul>
+                        <li><label for="Nome">Nome:</label>
+                            <input type="text" id="Nome" required="required">
+                        </li>
+                        <li><label for="Sobrenome">Sobrenome:</label>
+                            <input type="text" id="Sobrenome" required="required">
+                        </li>
+                        <li><label for="Email">E-mail:</label>
+                            <input type="email" id="Email" required="required">
+                        </li>
+                        <li><label for="Senha">Senha:</label>
+                            <input type="password" id="Senha" required="required">
+                        </li>
+                    </ul>
+            </fieldset>
+            <fieldset>
+                <h2>Endereço</h2>
+                <ul>
+                    <li><label for="Logradouro">Logradouro:</label>
+                        <input type="text" id="Logradouro" required="required">
+                    </li>
+                    <li><label for="Complemento">Complemento:</label>
+                        <input type="text" id="Complemento" required="required">
+                    </li>
+                    <li><label for="Cidade">Cidade:</label>
+                        <input type="text" id="Cidade" required="required">
+                    </li>
+                    <li><label for="Estado">Estado:</label>
+                        <select name="Estado" id="Estado">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PA">Pará</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <h2>Perfil</h2>
+                <ul>
+                    <li><label for="Foto">Foto:</label>
+                        <input type="image" id="Foto" required="required">
+                    </li><br>
+                    <p>tamanho máximo de 700k, JPG, GIF PNG. </p><br>
+                    <li><label for="Nome">Nome:</label>
+                        <input type="text" id="Nome" required="required">
+                    </li>
+                    <li><label for="Site">Site:</label>
+                        <input type="text" id="Site" required="required">
+                    </li><br>
+                    <p>Tem um site ou blog? Coloque o endereço acima.</p><br>
+                    <li><label for="Bibliografia">Bibliografia:</label>
+                        <textarea id="Bibliografia" rows="10" cols="50"></textarea>
+                    </li>
+                </ul>
+                <li><label for="Genero">Gênero:</label>
+                    <label for="Masculino">Masculino:</label>
+                    <input type="radio" name="Genero" id="Masculino" value="Masculino">
+                    <label for="Feminino">Feminino:</label>
+                    <input type="radio" name="Genero" id="Feminino" value="Feminino">
+                    <label for="Outro">Outro</label>
+                    <input type="radio" name="Genero" id="Outro" value="Masculino">
+                </li>
+            </fieldset>
+            <fieldset>
+                <h2>E-Mails</h2>
+                <ul>
+                    <li><input type="checkbox" name="check1" id="check1" value="check1">
+                        <label for="check1">Tudo bem em enviar e-mails com mensagens de outros usuários.</label>
+                    </li>
+                    <li><input type="checkbox" name="check2" id="check2" value="check2">
+                        <label for="check2"> Tudo bem em enviar e-mails ocasionais com promoções sobre outros
+                            produtos.</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
