@@ -9,7 +9,7 @@
 <body>
     <main>
         <h1>Crie uma Nova Conta</h1>
-        <form method="post">
+        <form method="post" action="Criar Conta">
             <fieldset>
                 <h2>Conta</h3>
                     <ul>
@@ -48,7 +48,7 @@
                     </li>
                     <li>
                         <label for="Estado">Estado:</label>
-                        <select name="Estado" id="Estado">
+                        <select name="Estado" id="Estado" required="required">
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -125,6 +125,7 @@
                     </li>
                 </ul>
             </fieldset>
+            <button type="submit">Criar Conta</button>
         </form>
     </main>
 </body>
